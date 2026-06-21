@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-side="black">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nakama Store — Black Dragon & White Dragon</title>
+  <meta name="description" content="Nakama Store Morocco — Black Dragon and White Dragon wooden katana collection." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Yuji+Syuku&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="locked">
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" id="progress"></div>
+  <div class="cursor-light" id="cursorLight" aria-hidden="true"></div>
+
+  <section class="gate" id="gate" aria-label="Choose your dragon">
+    <button class="gate-side gate-black" data-side="black" data-target="#black-dragon" type="button">
+      <span class="gate-bg" aria-hidden="true"></span>
+      <span class="gate-top">黒 龍 · THE ORIGINAL</span>
+      <span class="gate-kanji">黒龍</span>
+      <span class="gate-title">Black Dragon</span>
+      <span class="gate-sub">Forged in shadow</span>
+      <span class="gate-cta">Enter the shadow</span>
+    </button>
+
+    <button class="gate-side gate-white" data-side="white" data-target="#white-dragon" type="button">
+      <span class="gate-bg" aria-hidden="true"></span>
+      <span class="gate-top">白 龍 · NEW · SOON</span>
+      <span class="gate-kanji">白龍</span>
+      <span class="gate-title">White Dragon</span>
+      <span class="gate-sub">Born of light</span>
+      <span class="gate-cta">Enter the light</span>
+    </button>
+
+    <div class="gate-divider" aria-hidden="true"></div>
+    <div class="gate-vs" aria-hidden="true">VS</div>
+  </section>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#intro" aria-label="Nakama Store home">
+      <span class="brand-kanji">仲間</span>
+      <span>NAKAMA</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Website navigation">
+      <a href="#black-dragon">Black Dragon</a>
+      <a href="#white-dragon">White Dragon</a>
+      <a href="#compare">Compare</a>
+      <a href="#order">Order</a>
+    </nav>
+
+    <button class="switch" id="switchSide" type="button">Switch side</button>
+  </header>
+
+  <main>
+    <section class="intro section" id="intro">
+      <div class="intro-bg intro-black"></div>
+      <div class="intro-bg intro-white"></div>
+      <div class="intro-copy reveal">
+        <p class="eyebrow">Nakama Store · Marrakech</p>
+        <h1>Two Dragons.<br>One clean drop.</h1>
+        <p>
+          We removed the old collection and focused the whole experience on the two signature swords:
+          the dark original and its white-and-gold counterpart.
+        </p>
+        <div class="intro-actions">
+          <a class="btn btn-dark" href="#black-dragon">Black Dragon</a>
+          <a class="btn btn-light" href="#white-dragon">White Dragon</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="product product-black section" id="black-dragon" data-product="black">
+      <div class="product-bg"></div>
+
+      <div class="product-copy reveal">
+        <p class="eyebrow">黒 龍 · The original</p>
+        <h2>Black<br>Dragon</h2>
+        <p>
+          Midnight lacquer, silver fittings, black wrap, and a white dragon motif running down the saya.
+          This is the sharper, darker, heavier identity of Nakama.
+        </p>
+
+        <div class="price-row">
+          <span>1490 MAD</span>
+          <em>In stock</em>
+        </div>
+
+        <div class="product-actions">
+          <a class="btn btn-main" href="#order">Order now</a>
+          <button class="btn btn-outline gallery-jump" data-gallery="black" type="button">See details</button>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="halo"></div>
+        <img src="assets/images/black-full.webp" alt="Black Dragon full katana" />
+      </div>
+
+      <div class="details-strip reveal" id="black-details">
+        <article>
+          <img src="assets/images/black-handle.webp" alt="Black Dragon handle close-up">
+          <span>Handle</span>
+        </article>
+        <article>
+          <img src="assets/images/black-dragon-detail.webp" alt="Black Dragon white dragon motif close-up">
+          <span>Dragon motif</span>
+        </article>
+        <article>
+          <img src="assets/images/black-wrap.webp" alt="Black Dragon wrapped scabbard">
+          <span>Sageo wrap</span>
+        </article>
+        <article>
+          <img src="assets/images/black-kashira.webp" alt="Black Dragon end cap detail">
+          <span>End cap</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="color-break dark-break section">
+      <div class="break-inner reveal">
+        <span>黒龍</span>
+        <h2>Shadow first.<br>Details second.</h2>
+        <p>
+          The page stays cinematic, but the product stays real. No fake ten-sword catalogue.
+          No unnecessary 3D. Just the two dragons and their parts.
+        </p>
+      </div>
+    </section>
+
+    <section class="product product-white section" id="white-dragon" data-product="white">
+      <div class="product-bg"></div>
+
+      <div class="product-copy reveal">
+        <p class="eyebrow">白 龍 · White & gold edition</p>
+        <h2>White<br>Dragon</h2>
+        <p>
+          Ivory white finish, golden dragon motif, white wrap, and bright silver fittings.
+          A cleaner, lighter mirror of the Black Dragon identity.
+        </p>
+
+        <div class="price-row">
+          <span>Coming soon</span>
+          <em>Preview</em>
+        </div>
+
+        <div class="product-actions">
+          <a class="btn btn-main light-main" href="#order">Pre-order</a>
+          <button class="btn btn-outline light-outline gallery-jump" data-gallery="white" type="button">See details</button>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="halo"></div>
+        <img src="assets/images/white-full.webp" alt="White Dragon full katana" />
+      </div>
+
+      <div class="details-strip reveal" id="white-details">
+        <article>
+          <img src="assets/images/white-handle.webp" alt="White Dragon handle close-up">
+          <span>Handle</span>
+        </article>
+        <article>
+          <img src="assets/images/white-dragon-detail.webp" alt="White Dragon gold dragon motif close-up">
+          <span>Gold motif</span>
+        </article>
+        <article>
+          <img src="assets/images/white-wrap.webp" alt="White Dragon wrapped scabbard">
+          <span>White wrap</span>
+        </article>
+        <article>
+          <img src="assets/images/white-kashira.webp" alt="White Dragon end cap detail">
+          <span>End cap</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="compare section" id="compare">
+      <div class="compare-head reveal">
+        <p class="eyebrow">Choose the energy</p>
+        <h2>Same soul.<br>Opposite aura.</h2>
+      </div>
+
+      <div class="compare-grid">
+        <article class="compare-card compare-black reveal">
+          <img src="assets/images/black-full.webp" alt="Black Dragon katana">
+          <div>
+            <span>黒龍</span>
+            <h3>Black Dragon</h3>
+            <p>Dark, sharp, smoky, original. Best for the heavier premium look.</p>
+          </div>
+        </article>
+
+        <article class="compare-card compare-white reveal">
+          <img src="assets/images/white-full.webp" alt="White Dragon katana">
+          <div>
+            <span>白龍</span>
+            <h3>White Dragon</h3>
+            <p>Clean, bright, elegant, gold-accented. Best for a collector-style launch.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="order section" id="order">
+      <div class="order-card reveal">
+        <p class="eyebrow">Order flow</p>
+        <h2>Simple. Smooth. WhatsApp-first.</h2>
+        <p>
+          Keep the experience premium, then close the sale where Moroccan customers actually buy:
+          WhatsApp and Instagram.
+        </p>
+        <div class="product-actions">
+          <a class="btn btn-main" href="https://wa.me/212600000000" target="_blank" rel="noreferrer">Order on WhatsApp</a>
+          <a class="btn btn-outline" href="https://www.instagram.com/nakama_store_morocco/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>NAKAMA STORE</span>
+    <span>Marrakech · Maroc</span>
+    <span>Black Dragon · White Dragon</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
